@@ -2,6 +2,12 @@
   "name": "vectorly/php-client",
   "description": "Vectorly.io api php client",
   "type": "library",
+  "keywords": [
+    "vectorly",
+    "php",
+    "api",
+    "api client"
+  ],
   "authors": [
     {
       "name": "Ziyad ID-BOUHOUCH",
