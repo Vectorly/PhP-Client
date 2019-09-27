@@ -8,6 +8,7 @@
     "api",
     "api client"
   ],
+  "license": "MIT",
   "authors": [
     {
       "name": "Ziyad ID-BOUHOUCH",
