@@ -1,0 +1,35 @@
+{
+  "name": "vectorly/php-client",
+  "description": "Vectorly.io api php client",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Ziyad ID-BOUHOUCH",
+      "email": "ziyad.id.bouhouch@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.1.3",
+    "ankitpokhrel/tus-php": "^1.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "adhocore/jwt": "^0.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vectorly\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@php -r \"file_exists('tests/config.php') || copy('tests/config.example.php', 'tests/config.php');\""
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('tests/config.php') || copy('tests/config.example.php', 'tests/config.php');\""
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.3"
+  }
+}
